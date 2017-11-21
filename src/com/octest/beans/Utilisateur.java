@@ -2,14 +2,14 @@ package com.octest.beans;
 
 public class Utilisateur {
 	
-	private String nomUtilisataur;
+	private String login;
 	private String mdp;
 	
-	public String getNomUtilisataur() {
-		return nomUtilisataur;
+	public String getLogin() {
+		return login;
 	}
-	public void setNomUtilisataur(String nomUtilisataur) {
-		this.nomUtilisataur = nomUtilisataur;
+	public void setLogin(String login) {
+		this.login = login;
 	}
 	public String getMdp() {
 		return mdp;
