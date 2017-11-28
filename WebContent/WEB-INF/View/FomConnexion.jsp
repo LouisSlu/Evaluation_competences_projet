@@ -10,14 +10,17 @@
 </head>
 
 <body>
-	<form action="connexion" method="post">
+	<form action="" method="post">
 		<fieldset>
 			 <legend>Connexion</legend>
 			 <label for="login">Login : <span class="requis">*</span></label>
              <input type="text" id="login" name="login" value="" size="20" maxlength="60" />
+			 <span class="erreur">${erreurs['login']}</span>
+             
              <br />
              <label for="mdp">Mot de passe : <span class="requis">*</span></label>
              <input type="text" id="mdp" name="mdp" value="" size="20" maxlength="60" />
+             <span class="erreur">${erreurs['mdp']}</span>
              <br />
              
           	 <input type="submit" value="Connexion" class="Sanslabel"/>
