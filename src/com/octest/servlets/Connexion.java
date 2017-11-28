@@ -15,18 +15,6 @@ public class Connexion extends HttpServlet {
 	private static final String CHAMP_LOGIN ="login";
 	private static final String CHAMP_PASS ="mdp";
 	
-	public static String getVue() {
-		return VUE;
-	}
-
-	public static String getChampLogin() {
-		return CHAMP_LOGIN;
-	}
-
-	public static String getChampPass() {
-		return CHAMP_PASS;
-	}
-
 	public Connexion() {
 	    super();
 	    
