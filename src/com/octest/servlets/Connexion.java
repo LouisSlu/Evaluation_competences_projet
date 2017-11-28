@@ -39,5 +39,17 @@ public class Connexion extends HttpServlet {
 		private validationLogin(String login) throws Exception{}
 	    private validationPass(String mdp) throws Exceptions{}
 	}
+	
+	private void validationLogin(String login) throws Exception {
+		if(login != null && login.trim().length() != 0) {
+			throw new Exception("Merci de saisir un login !");
+		}
+	}
+	
+	private void validationPass(String mdp) throws Exception{
+		if(mdp != null && mdp.trim().length() != 0) {
+			throw new Exception("Merci de saisir un Mot de passe !");
+		}
+	}
 
 }
