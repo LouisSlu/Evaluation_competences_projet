@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>Evaluation_competences_projet</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>InscriptionForm</servlet-name>
+    <servlet-class>com.octest.form.InscriptionForm</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Connexion</servlet-name>
+    <servlet-class>com.octest.servlets.Connexion</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InscriptionForm</servlet-name>
+    <url-pattern>/InscriptionForm</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Connexion</servlet-name>
+    <url-pattern>/Connexion</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Accueil_Eleve</display-name>
+    <servlet-name>Accueil_Eleve</servlet-name>
+    <jsp-file>/WEB-INF/View/Accueil_Eleve.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Accueil_Eleve</servlet-name>
+    <url-pattern>/Accueil_Eleve</url-pattern>
+  </servlet-mapping>
+</web-app>
