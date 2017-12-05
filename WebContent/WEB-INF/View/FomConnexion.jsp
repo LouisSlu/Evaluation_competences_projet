@@ -8,7 +8,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Connexion</title>
-	<link type="text/css" rel="stylesheet" href="" />
+	<link href="bootstraps/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/tuto.css" rel="stylesheet">
 </head>
 
 <body>
