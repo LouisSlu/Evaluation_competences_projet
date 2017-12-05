@@ -2,12 +2,12 @@ package com.octest.servlets;
 
 import java.io.IOException;
 
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.octest.beans.*;
 import com.octest.form.*;
@@ -28,11 +28,21 @@ public class Connexion extends HttpServlet {
 	}
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		/* On rée un nouveau formulaire*/
+		
+		/* We creat a new object form*/
 		ConnexionForm form = new ConnexionForm();
 		
 		Utilisateur utilisateur = form.connecterUtilisateur(request);
 		
+		HttpSession session = request.getSession();
+		
+		if(form.getErreurs().isEmpty()) {
+			session.setAttribute(ATT_SESSION_USER, utilisateur);
+		}
+		else {
+			session.setAttribute(ATT_SESSION_USER, null);
+			
+		}
 		request.setAttribute(ATT_FORM, form);
 		request.setAttribute(ATT_USER, utilisateur);
 		
