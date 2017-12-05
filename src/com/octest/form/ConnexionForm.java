@@ -5,6 +5,8 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.octest.beans.*;
+
 public final class ConnexionForm {
 
 	private static final String CHAMP_LOGIN ="login";
@@ -19,11 +21,9 @@ public final class ConnexionForm {
 
 	public Map<String, String> getErreurs() {
 		return erreurs;
-	}
-	
-	
+	}	
 
-}
+
 
 public Utilisateur connecterUtilisateur(HttpServletRequest request) {
 	String login = getValeurChamp(request, CHAMP_LOGIN);
@@ -66,4 +66,23 @@ private void validationPass(String mdp) throws Exception{
 	}
 }
 
-private void Set
+private void SetErreur (String Champ, String message){
+	erreurs.put(Champ,message);
+}
+
+private static String getValeurChamp(HttpServletRequest request, String nonChamp) {
+	String valeur = request.getParameter(nomChamp);
+	if (valeur == null || valeur.trim().length() == 0) {
+		return null;
+	}
+	else {
+		return valeur.trim();
+	}
+}
+}
+
+
+
+
+
+
