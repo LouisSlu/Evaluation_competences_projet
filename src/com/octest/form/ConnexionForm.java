@@ -65,3 +65,5 @@ private void validationPass(String mdp) throws Exception{
 		throw new Exception("Merci de saisir un Mot de passe !");
 	}
 }
+
+private void Set
