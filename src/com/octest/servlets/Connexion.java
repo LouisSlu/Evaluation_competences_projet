@@ -17,6 +17,7 @@ import com.octest.form.*;
 public class Connexion extends HttpServlet {
 	/*On récupère les champs du formulaire Connexion */
 	public static final String VUE ="/WEB-INF/View/FomConnexion.jsp";
+	public static final String ATT_SESSION_USER = "sessionUser";
 	public static final String ATT_USER ="utilisateur";
 	public static final String ATT_FORM ="form";
 	
