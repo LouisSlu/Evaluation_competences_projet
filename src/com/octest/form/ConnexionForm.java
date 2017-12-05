@@ -70,6 +70,7 @@ private void SetErreur (String Champ, String message){
 	erreurs.put(Champ,message);
 }
 
+String  nomChamp = null;
 private static String getValeurChamp(HttpServletRequest request, String nonChamp) {
 	String valeur = request.getParameter(nomChamp);
 	if (valeur == null || valeur.trim().length() == 0) {
