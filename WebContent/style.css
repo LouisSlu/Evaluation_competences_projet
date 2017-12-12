@@ -1,17 +1,17 @@
 @CHARSET "UTF-8";
 
 @media (min-width: 768px) {
-  .header {
+  .container {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .header {
+  .container {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .header {
+  .container {
     width: 1170px;
   }
 }
