@@ -14,4 +14,8 @@
   .container {
     width: 1170px;
   }
+
+[class*="col-"] {
+	background-color:lightgreen;
+}
 }

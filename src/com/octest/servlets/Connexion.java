@@ -29,7 +29,7 @@ public class Connexion extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		/* We creat a new object form*/
+		/* We create a new object form*/
 		ConnexionForm form = new ConnexionForm();
 		
 		Utilisateur utilisateur = form.connecterUtilisateur(request);
