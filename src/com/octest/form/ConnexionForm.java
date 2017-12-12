@@ -11,6 +11,7 @@ public final class ConnexionForm {
 
 	private static final String CHAMP_LOGIN ="login";
 	private static final String CHAMP_PASS ="mdp";
+	
 	private String resultat;
 	private Map<String, String> erreurs = new HashMap<String, String>();
 	
@@ -88,9 +89,3 @@ private static String getValeurChamp(HttpServletRequest request, String nomChamp
 	}
 }
 }
-
-
-
-
-
-
