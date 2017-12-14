@@ -32,11 +32,21 @@
 
 <servlet>
     <servlet-name>Deconnexion</servlet-name>
-    <servlet-class>com.octest.servlets.Connexion</servlet-class>
+    <servlet-class>com.octest.servlets.Deconnexion</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Deconnexion</servlet-name>
     <url-pattern>/deconnexion</url-pattern>
+  </servlet-mapping>
+  
+  
+<servlet>
+    <servlet-name>Test</servlet-name>
+    <servlet-class>com.octest.servlets.Test</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Test</servlet-name>
+    <url-pattern>/test</url-pattern>
   </servlet-mapping>
 
 </web-app>

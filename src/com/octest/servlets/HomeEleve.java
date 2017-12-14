@@ -3,7 +3,6 @@ package com.octest.servlets;
 import java.io.IOException;
 
 import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -15,7 +14,6 @@ import com.octest.form.*;
 
 @WebServlet("/HomeEleve")
 public class HomeEleve extends HttpServlet {
-//public class HomeEleve {
 	/* Take the id of student */
 	
 	public static final String VUE ="/WEB-INF/View/Accueil_Eleve.jsp";
@@ -28,18 +26,18 @@ public class HomeEleve extends HttpServlet {
 		this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
 	}
 	 
-	/***public static final String ACCES_UTILISATEUR  = "/WEB-INF/View/Accueil_Eleve.jsp";
+	public static final String ACCES_UTILISATEUR  = "/WEB-INF/View/Accueil_Eleve.jsp";
 	 public static final String ATT_SESSION_USER = "sessionUser";
 
 	    protected void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {
 	        // Affichage de la page restreinte 
 	        this.getServletContext().getRequestDispatcher( ACCES_UTILISATEUR ).forward( request, response );
-	    } ***/
+	    }
 	    
-		/**private ServletRequest getServletContext() {
+		private ServletRequest getServletContext() {
 			// TODO Auto-generated method stub
 			return null;
-		}**/
+		}
 		
 		protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			
@@ -65,3 +63,4 @@ public class HomeEleve extends HttpServlet {
 		}
 
 }
+

@@ -12,7 +12,6 @@ import javax.servlet.http.HttpSession;
 import com.octest.beans.*;
 import com.octest.form.*;
 
-
 @WebServlet("/Connexion")
 public class Connexion extends HttpServlet {
 	/*On récupère les champs du formulaire Connexion */
