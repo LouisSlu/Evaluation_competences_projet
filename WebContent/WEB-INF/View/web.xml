@@ -30,13 +30,13 @@
 	<url-pattern>/homeEleve</url-pattern>
 </servlet-mapping>
 
-
 <servlet>
-  <servlet-name>Deconnexion</servlet-name>
-  <servlet-class>com.octest.servlets.Deconnexion</servlet-class>
-</servlet>
-<servlet-mapping>
-  <servlet-name>Deconnexion</servlet-name>
-  <url-pattern>/deconnexion</url-pattern>
-</servlet-mapping>
+    <servlet-name>Deconnexion</servlet-name>
+    <servlet-class>com.octest.servlets.Connexion</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Deconnexion</servlet-name>
+    <url-pattern>/deconnexion</url-pattern>
+  </servlet-mapping>
+
 </web-app>
