@@ -10,7 +10,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Connexion</title>
 	<link href="bootstraps/css/bootstrap.css" rel="stylesheet">
-    <link href="/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     
 </head>
 

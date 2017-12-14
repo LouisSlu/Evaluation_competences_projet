@@ -33,16 +33,6 @@
       				<p> ${sessionScope.sessionUtilisateur.email}</p></div>
       		</div>
       	</div>
-      	<div class="information">	
-      		<div class="row"> /* Creation of the Dashboard with all courses */
-        		<div class="col-lg-4 col-lg-offset-1">Dashboard</div>
-        		<div class="col-lg-4 col-lg-offset-2">Electronique</div>
-        		<div class="col-lg-4 col-lg-offset-2">Informatique</div>
-        		<div class="col-lg-4 col-lg-offset-2">Télécom</div>
-        		<div class="col-lg-4 col-lg-offset-2">Traitement du signal</div>
-        		<div class="col-lg-4 col-lg-offset-2">Compétences générales</div>
-      		</div>
-    	</div>
     </div>
 	
 	

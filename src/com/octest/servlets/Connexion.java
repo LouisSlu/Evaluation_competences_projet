@@ -22,7 +22,6 @@ public class Connexion extends HttpServlet {
 	public static final String ATT_FORM ="form";
 	
 
-		
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
 	}
